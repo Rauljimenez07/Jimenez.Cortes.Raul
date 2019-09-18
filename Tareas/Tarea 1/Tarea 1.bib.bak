@@ -1,0 +1,13 @@
+% Encoding: UTF-8
+
+@Electronic{Henao2005,
+  author       = {F. Henao, D.R Cadavid, H.A García, O.P. Palacio and R. Bohórquez.},
+  month        = {noviembre},
+  year         = {2005},
+  title        = {Diseño de Filtros Activos para Cargas Monofásicas Utilizando Algoritmos Genéticos, SICEL.},
+  language     = {español},
+  howpublished = {2005},
+  url          = {http://ocw.uc3m.es/tecnologia-electronica/electronica-de-potencia/material-de-clase-1/MC-F-006.pdf},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

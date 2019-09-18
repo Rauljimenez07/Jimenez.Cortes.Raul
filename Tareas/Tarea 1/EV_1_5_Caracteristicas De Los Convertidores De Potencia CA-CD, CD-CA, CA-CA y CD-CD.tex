@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+%Gummi|065|=)
+\title{\textbf{\begin{center}Ev-1-5-Caracteristicas De Los Convertidores De Potencia CA-CD, CD-CA, CA-CA y CD-CD\end{center}}}
+\author{\textbf{Jimenez Cortes Raul}\\
+\textbf{Universidad Politecnica De La Zona Metropolitana De Guadalajara}\\
+		\textbf{Ingenieria Mecatronica 4º "B"}}
+		
+\date{\textbf{17/09/2019}}
+\usepackage{graphicx}
+\begin{document}
+\maketitle
+
+\section{Convertidores CC-CA}
+El convertidor de CC/CA tambien conocido como inversor, es un circuito que convierte una fuente de CC en tension de CA sinusoidal para suministrar cargas de CA, controlar motores de CA o incluso conectar dispositivos de CC conectados a la red. Al igual que un convertidor CC/CC, la entrada de un inversor puede ser una fuente directa como una bateria, una celda solar, o una pila de combustible o puede provenir de un enlace de CC intermedio que puede suministrarse desde una fuente de CA. Generalmente, los inversores se pueden clasificar segun su salida de CA como monofasicos o trifasicos y tambien como convertidores de puente medio o completo. De Lorenzo ha diseñado dos configuraciones para implementar esta categoria. Una configuracion para cubrir los inversores con control PWM y otra configuracion para explicar las propiedades del circuito convertidor de frecuencia. Respecto al convertidor de frecuencia y porque es dificil cambiar la frecuencia de una onda sinusoidal de CA en modo CA, la primera tarea de un convertidor de frecuencia es convertir la onda a CC ya que es relativamente fácil manipular la CC para hacerla parecer como CA. Los tres componentes principales de todos los convertidores de frecuencia son: rectificador, bus de CC e inversa.
+\subsection{Su funcionamiento de alimetacion es:}
+Tension y de corriente.
+\subsection{Numero de fases:}
+\textbf{Monofasico:}\\ 
+\textbf{Semi-puente:}\\
+-Tension maxima que deben soportar los interruptores de potencia: UB, mas las sobretensiones que originen los circuitos practicos.\\
+-Tension maxima en la carga UB/2, por tanto para igual potencia corrientes más elevadas que en el puente completo.\\
+-Topologia adecuada para tension en la bateria alta y potencia en la carga edia.\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/CC-CA.png}
+\caption{Circuito Semi-Puente}
+\label{}
+\end{figure}\\
+
+\textbf{Puente Completo:}\\
+-Tension maxima que deben soportar los interruptores de potencia: UB, mas las sobretensiones que originen los circuitos prácticos.\\
+-Tension maxima en la carga UB,por tanto para igual potencia corrientes mas bajas  que en el medio puente. Topologia adecuada para tension en la bateria alta y potencia en la carga alta.\\
+-Doble nº de interruptores de potencia que en el medio puente y que en el Push-Pully de gobierno más complejo por no tener un terminal referido a masa,(T1 y T3).\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/CC_CA.png}
+\caption{Circuito Puente Completo}
+\label{}
+\end{figure}\\
+
+\textbf{Push-Pull}\\
+-Tension maxima que deben soportar los interruptores de potencia: UB, mas las sobretensiones que originen los circuitos practicos, que en este caso serán mayores debido a la inductancia de disperson del transformador.\\
+-Tensión máxima en la carga UB.B. El transformador de toma media tiene un factor de utilización bajo en el primario y empeora bastante el rendimiento de los circuitos prácticos. No es aconsejable utilizar esta topología para potencias de más de 10kVA.\\
+-Solo utiliza dos interruptores de potencia y ambos están referidos a masa y por tanto su gobierno es sencillo.\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/CC--CA.png}
+\caption{Circuito Push-Pull}
+\label{}
+\end{figure}\\
+\\\\\\\\\\\\\\\\\\\\\\\\
+\textbf{Trifasico}\\
+\textbf{Puente trifasico de tres ramas:}\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/CC__CA.png}
+\caption{Circuito Trifasico}
+\label{}
+\end{figure}\\\\
+
+\subsection{Disposicion De Cargas}
+\textbf{Estrella y Delta:}\\
+Las cargas(receptores) trifasicas pueden tener dos tipos de conexion: la denominada conexion en triangulo “”que esta representada en la figura 8, o la conexion en estrella “Y” ejemplificada en la figura 9.Ademas,las cargas mas alla de la conexion pueden ser balanceadas o equilibradascuando las tres  impedancias  que  la  componen  son  iguales  o desequilibradas cuando  no  se  cumple  dicha condicion.
+Si la carga esta balanceada (equilibrada), la conexion neutra puede eliminarse sin que el circuito se vea afectado de ninguna manera; esto es, si: Z1= Z2= Z3, entonces INsera cero.\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/CC____CA.png}
+\caption{Diagrama Estrella Y Delta}
+\label{}
+\end{figure}\\
+\subsection{Forma De Onda De Salida}
+\textbf{Cuadrada:}\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/Cuadrada.png}
+\caption{Onda Cuadrada}
+\label{}
+\end{figure}\\\\\\\\\\\\\\\\
+\textbf{cuasi-cuadrada:}\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/Cuasi.png}
+\caption{Onda Cuasi-Cuadrada}
+\label{}
+\end{figure}\\
+\textbf{Modulados:}\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/modulada.png}
+\caption{Onda Por Modulacion}
+\label{}
+\end{figure}\\\\\\\\\\
+\subsection{Multinivel:}
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/Multinivel.png}
+\caption{}
+\label{}
+\end{figure}
+\section{Convertidores CA-CA}
+\subsection{Variadores De CA}
+La  electronica de potencia ac-ac convertidor de corriente alterna, en forma generica, acepta de energia electrica de un sistema y la convierte para su entrega a otro sistema de corriente alterna con formas de onda de amplitud diferente, frecuencia y fase. Pueden ser de una o tres fases tipos en funcion de sus clasificaciones de poder. La ac -ac convertidores empleados para variar la tension eficaz a traves de la carga constante frecuencia son conocidos como  controladores  o  reguladores  de  voltaje  de  ca de  ca.  El  control  de  voltaje  se  logra  mediante:  (i)  control  de fase en virtud de la conmutacion fisica que utiliza pares de controlado desilicio rectificadores (SCR) o triac, o (ii) por   el   control de   compensacion   con   arreglo   a -forzada   conmutacion   con   conmutadores   controlados completamente auto-conmutados como Tiristores Puerta Apagar-(OTG), transistores de potencia, Los transistores bipolares  de  puerta  aislada  (IGBT),  controlado  por  MOS  Tiristores  (MCT),  etc   ac -convertidores  de  corriente alterna  en  la  que  corriente  alterna  en  una  frecuencia  se  convierte  directamente  en  corriente  alterna  en  otra frecuencia  sin  ningun  tipo  de  conversion de  corriente  continua  intermedios  enlace  se  conocen  como  ciclo convertidores,  la  mayoria  de  los  que  utilizan  naturalmente  conmutados  SCR  para  su  funcionamiento  cuando  la frecuencia de salida maxima se limita a una fraccion del frecuencia de entrada. 
+\subsection{Ciclo Controladores}
+\textbf{Control De Fase:}\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/Fase.png}
+\caption{Control De Fase}
+\label{}
+\end{figure}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\textbf{Control Integral:}\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/Integral.png}
+\caption{Control Integral}
+\label{}
+\end{figure}\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\subsection{Convertidores Matriciales}
+El  Convertidor  Matricial  (CM)  es  un  convertidor  CA-CA  trifasico  (3Ф-3Ф) que  consiste  en  un  arreglo  de  interruptores  bi-direccionales  que  conectan  una  carga trifasica directamente a la linea de alimentacion trifasica. El  elemento  clave  en  el  CM  es  el  control  de  los  interruptores  bi-direccionales que operan a alta frecuencia. Estos son controlados de tal manera que  el  CM  puede  suministrar  a  la  carga  un  voltaje  de  amplitud  y  frecuencia  variables.  Los  interruptores  están  dispuestos  de  tal  manera  que  cualquiera  de  las lineas de salida puede ser conectada a cualquiera  de  las  lineas  de  entrada.  La  Fig.1.1  muestra  el  CM  trifasico,  con  nueve  interruptores  bi-direccionales.  La  Fig.1.2  muestra  el  voltaje  de  salida  vu  y  la  corriente  de  entrada  ia  tipicos  en  un  CM mostrado en Fig. 2.1.\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/Matricial.png}
+\caption{Muestra De Convertidor Matricial}
+\label{}
+\end{figure}\\
+Los voltajes de salida son generados a traves de patrones de modulacion PWM (Pulse Width Modulation, Modulacion por Ancho de Pulso), similares a los utilizados  en  los  inversores  convencionales,  excepto  por  que  la  entrada  es  una  fuente de alimentacion trifasica en lugar de un voltaje constante de DC. El  CM  no  utiliza  un  bus  de  CD  como  etapa  intermedia  en  la  conversion  CA-CA, por lo que no necesita de elementos reactivos para almacenar energia, que limitan en tamaño y duracion la vida util de un convertidoria como es comun en    otros    convertidores    de    potencia.    Este    convertidor    tiene    algunascaracteristicas  que  los  hacen  mas  eficiente  frente  a  otros  convertidores  de  CA-CA:\\ -Circuito de potencia simple y compacto.\\ -Voltaje de salida trifasico con frecuencia y amplitud variables.\\ -Corrientes de entrada y salida senoidales.\\ -Factor de potencia ajustable a la unidad para cualquier tipo de carga.\\ -Operacion completamente regenerativa.\\ Estas   caracteristicas   son   las   razones   del   enorme   interés   en   esta   topologia, que ha sido estudiada desde hace 20 años, pero que hasta ahora se ha logrado desarrollar con mayor eficacia gracias a los avances tecnologicos en dispositivos semiconductores.
+\section{Convertidores CA-CD}
+\subsection{Controlados}
+Los rectificadores controlados emplean el tiristor o SCR(rectificador controlado de silicio) como dispositivo de control.
+
+El tiristor es un semiconductor que presenta dos estados estables: en uno conduce, y en otro esta en corte(bloqueo directo, bloqueo inverso y conduccion directa).
+
+El objetivo del tiristor es retardar la entrada en conduccion del mismo, ya que como se sabe, un tiristor se hace conductor no solo cuando la tension en sus bornes se hace positiva (tension de anodo mayor que tension de catodo), sino cuando siendo esta tensión positiva, se envia un impulso de cebado a puerta.
+\subsection{No Controlados}
+la hora de llevar a cabo la rectificacion se han de utilizar elementos electronicos que permitan el paso de la corriente en un sentido, permaneciendo bloqueado cuando se le aplique una tension de polaridad inapropiada. para ello, en los rectificadores no controlados, el componente m"s adecuado utilizado es el diodo semiconductor.
+
+\section{Convertidores CD-CD(CC-CC)}
+Los convertidores CD-CD se utilizan  ampliamente en el control de los motores de traccion de automoviles electricos, tranvias electricos, gruas marinas, montacargas y elevadores de minas. En lo que a nosotros nos concierne el convertidor CD-CD se utilizara en la primera etapa del balastro  para  la  correccion  del  factor  de  potencia  y  obtener  una  salida  en  CD  estable  para  alimentar  el  inversor  resonante  el  cual  trabajara  en  alta  frecuencia.  En  este  capitulo  se  analizaran  3  topologias  de  convertidores  CD-CD  las  cuales  son:  Topologia  Elevadora,  Reductora-elevadora y Flyback.\\
+\subsection{Reductor Elevador} 
+En un convertidor elevador el voltaje de salida es mayor que el voltaje de entrada, de ahi  la  palabra  “Elevador”.En  la  figura  2.1  se  muestra  un  convertidor  elevador  que  utiliza  un  MOSFET  de  potencia  como  interruptor.  La  operacion  del  circuito  se  puede  dividir  en  dos  modos. El modo 1 empieza cuando se activa el transistor Q en t = 0. La corriente de entrada, que  se  eleva,  fluye  a  traves  del  inductor  L  y  del  transistor  Q.  El  modo  2  empieza  cuando  se  desconecta  el  transistor  Q  en  t  =  t1.  La  corriente  que  estaba  fluyendo  a  traves  del  transistor  fluira ahora a traves de L, C, la carga y el Diodo D. La corriente del inductor se abate hasta que  se  vuelve  a  activar  en  el  siguiente  ciclo  del  transistor  Q.  La  energia  almacenada  en  el  inductor  L  es  transferida  a  la  carga  [1].  Los  circuitos  equivalentes  para  estos  modos  de  operación se aparecen en la figura 2.2.\\
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.50]{/home/rauljimenez/Descargas/elevador.png}
+\caption{Reductor-Elevador}
+\label{}
+\end{figure}\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\subsection{Flyback}
+Durante  la  primera mitad del periodo de conmutacion, el transistor Q esta operando y de esta manera es almacenada la energia en el transformador primario; durante la segunda mitad del periodo esta energia  es  transferida  al  secundario  del  transformador  y  tambien  hacia  la  carga.\\
+\subsection{eleccion del convertidor}
+El  convertidor  seleccionado  para  la  primera  etapa  del  balastro  electronico  mono-etapa fue el convertidor reductor-elevador monofasico pero con unas pequeñas variaciones en su topologia que nos permitiran corregir el factor de potencia.Este  topologia  nos  brinda  dos  ventajas  principales  sobre  los  dos  circuitos  presentados.  La  primera  es  la  correccion  del  factor  de  potencia  de  manera  natural  trabajando  en  modo  de  conduccion  discontinuo  (MCD).  Por  otra  parte  la  topologia  reductor-elevador  trabajando  en  MCD,  proporciona  bajo  estrés  de  tensión  en  los  interruptores,  cuando  se  compara  con  la  topologia elevadora trabajando como corrector de factor de potencia. Asimismo, el reductor-elevador trabaja a frecuencia constante y en MCD proporcionando factor de potencia alto sin ningun  condicionamiento  ni  restriccion.  Por  consiguiente  no  es  necesario  tener  una  elevada  tensión en la salida para obtener un buen factor de potencia como en el caso del convertidor elevador.  Comparado  el  circuito  reductor-elevador  con  el  flyback  se  tiene  que  este  último  utiliza  un  transformador  en  su  topologia  lo  cual  nos  incrementaria  el  volumen  de  nuestro  balastro. Como  el  convertidor  reductor-elevador  va  estar  alimentado  por  la  corriente  de  linea  es  necesario la conversion de corriente alterna a corriente continua. Este proceso se efectua por medio  de  un  rectificador  de  onda  completa,  como  puede  ser  un  puente  de  diodos  y  un  filtropara obtener un voltaje continuo. Este circuito se describira mas detalladamente en el capitulo 5 mostrando el analisis teorico, los valores nominales para los componentes  y simulaciones.
+
+
+\bibliography{Tarea 1.bib}{http://ocw.uc3m.es/tecnologia-electronica/electronica-de-potencia/material-de-clase-1/MC-F-006.pdf}\\{https://www.delorenzoglobal.com/es/electronica-de-potencia/convertidores/}\\
+{https://upcommons.upc.edu/bitstream/handle/2117/93642/03Sam03de15.pdf}\\
+{https://sites.google.com/site/powerelektronic/home/ca-cd}
+\bibliographystyle{plain}
+\end{document}
