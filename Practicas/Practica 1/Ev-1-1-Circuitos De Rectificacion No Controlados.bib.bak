@@ -1,0 +1,13 @@
+% Encoding: UTF-8
+
+@Electronic{Valencia2007,
+  author       = {I.T.T.(S.E.) - Universitat de València -},
+  month        = {Junio},
+  year         = {2007},
+  title        = {Rectificación no Controlada},
+  language     = {Español},
+  howpublished = {2007},
+  url          = {https://www.uv.es/emaset/iep00/temas/IEP3-0607.pdf},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
