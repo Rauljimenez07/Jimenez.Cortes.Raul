@@ -1,0 +1,12 @@
+% Encoding: UTF-8
+
+@Electronic{Orellana2019,
+  author   = {Andrés Orellana},
+  month    = {octubre},
+  year     = {2019},
+  title    = {Amplificador de potencia clase b},
+  language = {Español},
+  url      = {https://www.monografias.com/trabajos89/amplificador-potencia-clase-b/amplificador-potencia-clase-b.shtml},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
