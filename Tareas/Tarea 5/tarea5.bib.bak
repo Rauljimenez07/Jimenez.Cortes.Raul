@@ -1,0 +1,13 @@
+% Encoding: UTF-8
+
+@Electronic{Alvarez2004-2015,
+  author       = {José Antonio E. García Álvarez},
+  month        = {septiembre},
+  year         = {2004-2015},
+  title        = {Asi funciona el motor de corriente directa o continua},
+  language     = {español},
+  howpublished = {2015},
+  url          = {http://www.asifunciona.com/electrotecnia/af_motor_cd/af_motor_cd_8.htm},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
