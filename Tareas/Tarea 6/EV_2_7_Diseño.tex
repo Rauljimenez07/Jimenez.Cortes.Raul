@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Jiménez Cortés Raúl}
+
+\begin{document}
+\begin{center}
+\begin{LARGE}
+\textbf{INGENIERÍA MECATRÓNICA}\\
+\end{LARGE}
+{\large Sistemas Eletrónicos De Interfaz}\\
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=0.80]{UPZMG_Mecatr_nica.png}
+\end{figure} 
+\begin{center}
+\begin{LARGE}
+EV-2-7-Diseño De Un Modulacion De Ancho De Pulso (PWM) Con Amp-Op Y Transistores.
+\end{LARGE}
+\end{center}
+
+\begin{Large}
+\textbf{Alumno}
+\\\textit{Raúl Jiménez Cortés}
+\textbf{\\Maestro}
+\\\textit{Morán Garabito Carlos Enriquez}
+\textbf{\\Fecha de Entrega}
+\\\textit{22/10/2019}
+\textbf{\\Grupo}
+\\\textit{4º "B"}
+\end{Large}
+\end{center}
+
+\newpage
+\section{¿Qué es Modulación de Ancho de Pulso (PWM)?}
+La modulacion de ancho de pulso (PWM, por sus siglas en ingles) de una señal es una tecnica que logra producir el efecto de una señal analogica sobre una carga, a partir de la variacion de la frecuencia y ciclo de trabajo de una señal digital. El ciclo de trabajo describe la cantidad de tiempo que la señal esta en un estado logico alto, como un porcentaje del tiempo total que este toma para completar un ciclo completo. La frecuencia determina que tan rapido se completa un ciclo (por ejemplo: 1000 Hz corresponde a 1000 ciclos en un segundo), y por consiguiente que tan rapido se cambia entre los estados logicos alto y bajo. Al cambiar una señal del estado alto a bajo a una tasa lo suficientemente rapida y con un cierto ciclo de trabajo, la salida parecera comportarse como una señal analogica constante cuanto esta esta siendo aplicada a algun dispositivo.
+
+\section{¿Para que se utiliza?}
+Señales de PWM son utilizadas comunmente en el control de aplicaciones. Su uso principal es el control de motores de corriente continua, aunque tambi\'en pueden ser utilizadas para controlar valvulas, bombas, sistemas hidraulicos, y algunos otros dispositivos mecanicos. La frecuencia a la cual la señal de PWM se generara, depender de la aplicacion y del tiempo de respuesta del sistema que esta siendo controlado. A continuacion se muestran algunas aplicaciones y sus respectivas frecuencias:
+\begin{itemize}
+\item Calentar elementos o sistemas con tiempos de respuesta lentos: 10-100 Hz o superior.            
+\item Motores eléctricos de corriente continua: 5-10 kHz o superior.
+\item Fuentes de poder o amplificadores de audio: 20-200 kHz o superior.
+\end{itemize}
+\section{T\'ecnicas de modulaci\'onescalares o PWM}
+
+Se  usa  en  inversores  DC/AC monofasicos y trifasicos. Se basan en la comparacion de una se\~nal de referencia  a  modular  y  una  señal portadora  de  forma  triangular  o diente de sierra \ref{Figura 2}; la comparacion generar\'a un tren de pulsos de ancho especifico que se utilizan en la conmutacion del puente inversor. La relacion entre la amplitud de la señal portadora y la se\~nal de referencia se llama \textit{\'indice de modulacion} y  se  representa  por  $m_a$ \ref{1},  donde  $A_r$ es la amplitud de la se\~nal de referencia y $A_c$ es la amplitud de la señal portadora. El \'indice de modulacion  permite  obtener tension variable a la salida del inversor.
+
+
+\begin{equation}
+m_a=\frac{A_r}{A_c}
+\label{1}
+\end{equation}\\
+
+\begin{equation}
+ m_f=\frac{F_r}{F_c}
+\label{2}
+ \end{equation}
+
+
+
+La relacion entre la frecuencia dela señal portadora y la frecuencia de referencia  se  denomina  \textit {\'indice de frecuecia} y se representa por $m_f$ \ref{2}, idealmente $m_f$ debe ser mayor a 21  y  la  frecuencia  de  la  portadora multiplo de la frecuencia de la señal de referencia. El \'indice de frecuencia determina la distorsin ar,onica de la señal de salida la cual es una medida de su  contenido  armonico. La variacion de la señal de referencia y la  secuencia  de  conmutacion dan como  resultado  diferentes  tecnicas de modulacion PWM, cada una modifica la eficiencia de la conversion,  las  perdidas  por  conmutacion en el puente inversor y la pureza de la señal de salida.
+\end{document}
