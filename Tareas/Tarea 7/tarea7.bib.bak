@@ -1,0 +1,13 @@
+% Encoding: UTF-8
+
+@Electronic{Jimenez2019,
+  author   = {Raul Jimenez},
+  month    = {octubre},
+  year     = {2019},
+  title    = {transistores de potencia},
+  language = {español},
+  url      = {https://sites.google.com/site/transistoresfototransistores/classroom-news
+https://www.areatecnologia.com/electronica/ejercicios-transistores.html},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
